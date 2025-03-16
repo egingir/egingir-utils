@@ -1,0 +1,20 @@
+{
+  "name": "egingir-utils",
+  "version": "1.0.0",
+  "description": "BE ve FE için ortak yardımcı fonksiyonlar",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:cjs": "babel src --out-dir dist/cjs --presets=@babel/preset-env --plugins=@babel/plugin-transform-modules-commonjs",
+    "build:esm": "babel src --out-dir dist/esm --presets=@babel/preset-env",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0"
+  },
+  "license": "MIT"
+}
