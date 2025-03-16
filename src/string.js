@@ -1,7 +1,8 @@
-export function toUpperCase(str) {
-  return str.toUpperCase();
-}
-
-export function padTo2Digits(num) {
-  return num.toString().padStart(2, "0");
+/**
+ * Pads a number to 2 digits.
+ * @param {string} number - The input string.
+ * @returns {string} The padded string.
+ */
+export function padTo2Digits(number) {
+  return number.toString().padStart(2, "0");
 }
