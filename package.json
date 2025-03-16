@@ -1,19 +1,21 @@
 {
   "name": "egingir-utils",
   "version": "1.0.5",
-  "description": "BE ve FE için ortak yardımcı fonksiyonlar",
+  "description": "A comprehensive JavaScript utility library for both backend (Node.js) and frontend (React). Provides optimized helper functions for string manipulation, date/time formatting, and location-based calculations. Designed to be lightweight, modular, and developer-friendly with full IntelliSense support.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
-    "build:cjs": "babel src --out-dir dist/cjs --presets=@babel/preset-env --plugins=@babel/plugin-transform-modules-commonjs",
-    "build:esm": "babel src --out-dir dist/esm --presets=@babel/preset-env",
+    "dev": "nodemon --watch src --exec 'npm run build'",
+    "build:cjs": "npx babel src --out-dir dist/cjs --presets=@babel/preset-env --plugins=@babel/plugin-transform-modules-commonjs",
+    "build:esm": "npx babel src --out-dir dist/esm --presets=@babel/preset-env",
     "build": "npm run build:cjs && npm run build:esm"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0"
+    "nodemon": "^3.1.9"
   },
   "license": "MIT"
 }

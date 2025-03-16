@@ -5,7 +5,7 @@ A powerful, lightweight, and modular JavaScript utility library designed to simp
 🔹 **Lightweight** - Optimized for performance  
 🔹 **Fully Modular** - Import only what you need  
 🔹 **Developer-Friendly** - Includes JSDoc comments for IntelliSense  
-🔹 \*\*Supports Both `import` (ESM) and `require` (CommonJS) in Node.js
+🔹 **Supports Both `import` (ESM) and `require` (CommonJS) in Node.js**
 
 ---
 
@@ -113,7 +113,7 @@ For example, when you type `toUpperCase()`, you'll see:
 
 🚀 Want to contribute? Feel free to submit a **pull request** or **open an issue** for any improvements.
 
-**GitHub Repository**: [https://github.com/yourusername/egingir-utils](https://github.com/yourusername/egingir-utils)
+**GitHub Repository**: [https://github.com/egingir/egingir-utils](https://github.com/egingir/egingir-utils)
 
 ---
 
