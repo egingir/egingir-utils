@@ -9,6 +9,12 @@ Object.defineProperty(exports, "getHoursMinutesFromDate", {
     return _time.getHoursMinutesFromDate;
   }
 });
+Object.defineProperty(exports, "padTo2Digits", {
+  enumerable: true,
+  get: function get() {
+    return _string.padTo2Digits;
+  }
+});
 Object.defineProperty(exports, "toUpperCase", {
   enumerable: true,
   get: function get() {
