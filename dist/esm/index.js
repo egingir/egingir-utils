@@ -3,11 +3,17 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.formatDate = formatDate;
-exports.toUpperCase = toUpperCase;
-function toUpperCase(str) {
-  return str.toUpperCase();
-}
-function formatDate(date) {
-  return new Date(date).toISOString().split("T")[0];
-}
+Object.defineProperty(exports, "getHoursMinutesFromDate", {
+  enumerable: true,
+  get: function get() {
+    return _time.getHoursMinutesFromDate;
+  }
+});
+Object.defineProperty(exports, "toUpperCase", {
+  enumerable: true,
+  get: function get() {
+    return _string.toUpperCase;
+  }
+});
+var _string = require("./string.js");
+var _time = require("./time.js");

@@ -1,7 +1,4 @@
-export function toUpperCase(str) {
-  return str.toUpperCase();
-}
+import { toUpperCase, padTo2Digits } from "./string.js";
+import { getHoursMinutesFromDate } from "./time.js";
 
-export function formatDate(date) {
-  return new Date(date).toISOString().split("T")[0];
-}
+export { toUpperCase, getHoursMinutesFromDate, padTo2Digits };
