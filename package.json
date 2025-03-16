@@ -1,6 +1,6 @@
 {
   "name": "egingir-utils",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A comprehensive JavaScript utility library for both backend (Node.js) and frontend (React). Provides optimized helper functions for string manipulation, date/time formatting, and location-based calculations. Designed to be lightweight, modular, and developer-friendly with full IntelliSense support.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
