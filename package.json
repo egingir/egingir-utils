@@ -1,5 +1,5 @@
 {
-  "name": "egingir-utils",
+  "name": "@egingir/utils",
   "version": "1.0.7",
   "description": "A comprehensive JavaScript utility library for both backend (Node.js) and frontend (React). Provides optimized helper functions for string manipulation, date/time formatting, and location-based calculations. Designed to be lightweight, modular, and developer-friendly with full IntelliSense support.",
   "main": "dist/cjs/index.js",
@@ -16,6 +16,9 @@
     "@babel/plugin-transform-modules-commonjs": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "nodemon": "^3.1.9"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "license": "MIT"
 }
