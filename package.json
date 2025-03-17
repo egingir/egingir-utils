@@ -4,17 +4,24 @@
   "description": "A comprehensive JavaScript utility library for both backend (Node.js) and frontend (React). Provides optimized helper functions for string manipulation, date/time formatting, and location-based calculations. Designed to be lightweight, modular, and developer-friendly with full IntelliSense support.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "type": "module",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "browser": "./dist/esm/index.js"
+  },
   "scripts": {
     "dev": "nodemon --watch src --exec 'npm run build'",
-    "build:cjs": "npx babel src --out-dir dist/cjs --presets=@babel/preset-env --plugins=@babel/plugin-transform-modules-commonjs",
-    "build:esm": "npx babel src --out-dir dist/esm --presets=@babel/preset-env",
+    "build:cjs": "cross-env BABEL_ENV=cjs npx babel src --out-dir dist/cjs",
+    "build:esm": "cross-env BABEL_ENV=esm npx babel src --out-dir dist/esm",
     "build": "npm run build:cjs && npm run build:esm"
   },
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-transform-modules-commonjs": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.10",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@babel/preset-env": "^7.26.9",
+    "cross-env": "^7.0.3",
     "nodemon": "^3.1.9"
   },
   "publishConfig": {

@@ -1,4 +1,5 @@
-import { toUpperCase, padTo2Digits } from "./string.js";
-import { getHoursMinutesFromDate } from "./time.js";
+import * as stringUtils from "./string.js";
+import * as timeUtils from "./time.js";
 
-export { toUpperCase, getHoursMinutesFromDate, padTo2Digits };
+export { stringUtils, timeUtils }; // Named exports
+export default { stringUtils, timeUtils }; // Default export

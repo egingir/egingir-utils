@@ -6,3 +6,5 @@
 export function padTo2Digits(number) {
   return number.toString().padStart(2, "0");
 }
+
+export const stringUtils = { padTo2Digits };
