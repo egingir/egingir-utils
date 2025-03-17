@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowJs": true, // JS dosyalarını işlemeye izin ver
+    "checkJs": false, // JS hatalarını TS gibi denetleme (istersen true yapabilirsin)
+    "declaration": true, // .d.ts dosyaları üret
+    "emitDeclarationOnly": true, // Sadece .d.ts üret, JS output üretme
+    "outDir": "dist/types", // .d.ts dosyalarının konumu
+    "skipLibCheck": true // Dış kütüphanelerdeki tip hatalarını yok say
+    // "strict": false vs. diğer opsiyonlar, ihtiyaca göre eklenebilir
+  },
+  "include": [
+    "src" // JS kaynak kodlarının yeri
+  ],
+  "exclude": ["**/__tests__", "**/*.test.js"]
+}
